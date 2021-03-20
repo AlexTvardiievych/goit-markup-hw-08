@@ -1,0 +1,56 @@
+.portfolio-header{
+  border: 1px solid $header-bd-color;
+}
+
+.container{
+  width: 1200px;
+  padding: 0px 15px;
+  margin: 0 auto;  
+}
+
+.logo{  
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.02em;
+}
+
+.logo--black{
+  color: $full-balck;
+}
+
+.logo--white{
+  color: $full-white; 
+}
+
+.logo__web{
+  color: $text-blue;
+}
+
+.site-contact__link{
+  color: $subtitle-text;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em; 
+  
+  @include transition(color cursor); 
+  
+  &:hover,
+  &:focus{
+    color: $text-blue;
+  }
+}
+
+.hidden-title {    
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0px;
+  padding: 0px;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;    
+}

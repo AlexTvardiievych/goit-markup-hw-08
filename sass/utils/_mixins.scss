@@ -1,0 +1,14 @@
+@mixin transition($type...){
+  transition-property: $type;
+  transition-duration: $animation-duration;
+  transition-timing-function: $animation-type;
+}
+
+@mixin transform($transforms...) {
+  transform: $transforms;
+}
+
+@mixin translate ($x, $y, $scale) {
+  @include transform(translateX($x) translateY($y) scale($scale));
+}
+  

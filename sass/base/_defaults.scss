@@ -1,0 +1,24 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+header{
+  margin: 0 auto;
+  position: relative;
+}
+
+textarea:-moz-placeholder{ 
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $textarea-text; 
+}
+
+textarea::-webkit-input-placeholder{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $textarea-text;  
+}
