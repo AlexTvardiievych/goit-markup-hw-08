@@ -22,3 +22,9 @@ textarea::-webkit-input-placeholder{
   letter-spacing: 0.01em;
   color: $textarea-text;  
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

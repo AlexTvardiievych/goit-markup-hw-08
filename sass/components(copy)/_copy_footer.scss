@@ -6,65 +6,12 @@
 
 .site-footer__container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;  
-
-  @media (min-width: 1200px) {
-    flex-direction: row;
-  }
-
-  @media (min-width: 1200px) {                   
-    align-items: baseline;      
-  }  
-}
-
-.concat-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
-  @media (min-width: 768px) {    
-    flex-direction: row;          
-    align-items: baseline; 
-  }  
-
-  @media (min-width: 1200px) {                   
-    margin-right: 93px;    
-  }
-  
-}
-
-.site-contact__footer{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 60px;
-
-  @media (min-width: 768px) {    
-    margin-right: 165px;    
-  }
-
-  @media (min-width: 1200px) {              
-    justify-content: flex-start;     
-    align-items: flex-start; 
-    margin-right: 70px;    
-  }
+  align-items: baseline;
+  justify-content: space-between;
 }
 
 .site-contact__address{
   margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-  @media (min-width: 1200px) {              
-    justify-content: flex-start;     
-    align-items: flex-start;     
-  }
 }
 
 .site-contact__street{
@@ -89,12 +36,7 @@
 }
 
 .subscribe__conainer{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 60px;
-  // margin-left: 70px;  
+  margin-left: 70px;
 }
 
 .subscribe__title{
@@ -137,28 +79,17 @@
 }
 
 .subscribe-input__container{
-  // margin-left: 93px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin-left: 93px;
 }
 
 .subscribe-input__title{
-  @extend %footer-subscribe-titles; 
-  margin-bottom: 20px; 
+  @extend %footer-subscribe-titles;  
 }
 
 .subscribe-input__elements{
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  @media (min-width: 1200px) {
-    flex-direction: row;
-    align-items: baseline;
-  }
 }
 
 .subscribe-input__email{
@@ -168,12 +99,8 @@
   background-color: $bg-main-color;
   border: 1px solid $footer-subscribe-email-border;
   border-radius: 4px;
-  padding: 15px 16px;  
-  margin-bottom: 20px;
-
-  @media (min-width: 1200px) {
-    margin-right: 12px;
-  }
+  padding: 15px 16px;
+  margin-right: 12px;
 }
 
 .subscribe-input__button{

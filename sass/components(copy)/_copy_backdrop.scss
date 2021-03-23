@@ -16,19 +16,11 @@
   position: absolute;
   top: 50%;
   left: 50%;  
-  min-width: 450px;
-  max-height: 100vh;
+  height: 581px;
+  width: 528px;
   background-color: $full-white;   
   @include translate(-50%, -50%, 1); 
   @include transition(visibility, opacity, transform);
-
-  @media (max-width: 479px) {
-    min-width: 95%;
-  }
-
-  @media (min-width: 1200px) {
-    max-width: 528px;
-  }
 }
 
 .backdrop.is-hidden{
@@ -41,9 +33,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;  
-  // height: 581px;
-  // width: 528px;
-  padding: 40px;  
+  height: 581px;
+  width: 528px;
+  padding: 40px;
 }
 
 .backdrop.is-hidden .input-form{

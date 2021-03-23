@@ -1,0 +1,47 @@
+.clients__container{
+  padding: 94px 0px; 
+  margin: 0 auto; 
+}
+
+.clients__title{
+  @extend %title-h2;
+  margin-bottom: 50px;
+}
+
+.clients__list{
+  display: flex;
+  margin: 0 auto;
+}
+
+.clients__item{
+  &:not(:last-child){
+    margin-right: 30px;
+  }
+}
+  
+
+.clients__link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: solid;
+  border-width: 1px;
+  color: $svg-grey-color;  
+  border-color: $svg-grey-color;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus{
+    color: $text-blue;
+    border-color: $text-blue;
+    cursor: pointer;
+  }
+
+  @include transition(color, border-color, cursor);  
+}
+
+.clients__icon{
+  fill: currentColor;
+}

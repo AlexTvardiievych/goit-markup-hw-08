@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header class="site-header site-header--portfolio">
+    <header class="site-header portfolio-header">
         <div class="container site-header__container">
             <nav class="site-header__nav">
                 <a href="./index.html" class="logo">
@@ -51,6 +51,12 @@
                     </li>
                 </ul>
             </div>
+            <button class="site-header__menu-toggle js-open-menu">
+                <svg class="site-header__menu-toggle--svg" width="24" height="16">
+                    <use class="site-header__menu-toggle--icon" href="./images/icon-sprite.svg#icon-menu-toggle">
+                    </use>
+                </svg>
+            </button>
         </div>
     </header>
 
@@ -80,7 +86,8 @@
                     <li class="content__item--projects">
                         <a class="content__card" href="#">
                             <div class="content__card--img">
-                                <img src="./images/portfolio/tech-crack.jpg" alt="Технокряк" />
+                                <img srcset="./images/portfolio/cards/tech-crack.jpg 1x, ./images/portfolio/cards/tech-crack@2x.jpg 2x"
+                                    src="./images/portfolio/cards/tech-crack.jpg" alt="Технокряк" />
                                 <div class="content__card--overlay">
                                     <p class="content__card--text">
                                         Технокряк это современная площадка распространения коронавируса.
@@ -99,7 +106,9 @@
                     <li class="content__item--projects">
                         <a class="content__card" href="#">
                             <div class="content__card--img">
-                                <img src="./images/portfolio/new-orlean.jpg" alt="Постер New Orlean vs Golden Star" />
+                                <img srcset="./images/portfolio/cards/new-orlean.jpg 1x, ./images/portfolio/cards/new-orlean@2x.jpg 2x"
+                                    src="./images/portfolio/cards/new-orlean.jpg"
+                                    alt="Постер New Orlean vs Golden Star" />
                                 <div class="content__card--overlay">
                                     <p class="content__card--text">
                                         Технокряк это современная площадка распространения коронавируса.
@@ -118,7 +127,8 @@
                     <li class="content__item--projects">
                         <a class="content__card" href="#">
                             <div class="content__card--img">
-                                <img src="./images/portfolio/seafood.jpg" alt="Ресторан Seafood" />
+                                <img srcset="./images/portfolio/cards/seafood.jpg 1x, ./images/portfolio/cards/seafood@2x.jpg 2x"
+                                    src="./images/portfolio/cards/seafood.jpg" alt="Ресторан Seafood" />
                                 <div class="content__card--overlay">
                                     <p class="content__card--text">
                                         Технокряк это современная площадка распространения коронавируса.
@@ -137,7 +147,8 @@
                     <li class="content__item--projects">
                         <a class="content__card" href="#">
                             <div class="content__card--img">
-                                <img src="./images/portfolio/project-prime.jpg" alt="Проект Prime" />
+                                <img srcset="./images/portfolio/cards/project-prime.jpg 1x, ./images/portfolio/cards/project-prime@2x.jpg 2x"
+                                    rcset="" src="./images/portfolio/cards/project-prime.jpg" alt="Проект Prime" />
                                 <div class="content__card--overlay">
                                     <p class="content__card--text">
                                         Технокряк это современная площадка распространения коронавируса.
@@ -156,7 +167,8 @@
                     <li class="content__item--projects">
                         <a class="content__card" href="#">
                             <div class="content__card--img">
-                                <img src="./images/portfolio/project-boxes.jpg" alt="Проект Boxes" />
+                                <img srcset="./images/portfolio/cards/project-boxes.jpg 1x, ./images/portfolio/cards/project-boxes@2x.jpg 2x"
+                                    rcset="" src="./images/portfolio/cards/project-boxes.jpg" alt="Проект Boxes" />
                                 <div class="content__card--overlay">
                                     <p class="content__card--text">
                                         Технокряк это современная площадка распространения коронавируса.
@@ -175,7 +187,8 @@
                     <li class="content__item--projects">
                         <a class="content__card" href="#">
                             <div class="content__card--img">
-                                <img src="./images/portfolio/inspiration.jpg" alt="Inspiration has no Borders" />
+                                <img srcset="./images/portfolio/cards/inspiration.jpg 1x, ./images/portfolio/cards/inspiration@2x.jpg 2x"
+                                    src="./images/portfolio/cards/inspiration.jpg" alt="Inspiration has no Borders" />
                                 <div class="content__card--overlay">
                                     <p class="content__card--text">
                                         Технокряк это современная площадка распространения коронавируса.
@@ -194,7 +207,8 @@
                     <li class="content__item--projects">
                         <a class="content__card" href="#">
                             <div class="content__card--img">
-                                <img src="./images/portfolio/limited-edition-magazine.jpg"
+                                <img srcset="./images/portfolio/cards/limited-edition-magazine.jpg 1x, ./images/portfolio/cards/limited-edition-magazine@2x.jpg 2x"
+                                    src="./images/portfolio/cards/limited-edition-magazine.jpg"
                                     alt="Издание Limited Edition" />
                                 <div class="content__card--overlay">
                                     <p class="content__card--text">
@@ -214,7 +228,7 @@
                     <li class="content__item--projects">
                         <a class="content__card" href="#">
                             <div class="content__card--img">
-                                <img src="./images/portfolio/project-lab.jpg" alt="Проект LAB" />
+                                <img src="./images/portfolio/cards/project-lab.jpg" alt="Проект LAB" />
                                 <div class="content__card--overlay">
                                     <p class="content__card--text">
                                         Технокряк это современная площадка распространения коронавируса.
@@ -233,7 +247,7 @@
                     <li class="content__item--projects">
                         <a class="content__card" href="#">
                             <div class="content__card--img">
-                                <img src="./images/portfolio/growing-business.jpg" alt="Growing Business" />
+                                <img src="./images/portfolio/cards/growing-business.jpg" alt="Growing Business" />
                                 <div class="content__card--overlay">
                                     <p class="content__card--text">
                                         Технокряк это современная площадка распространения коронавируса.
@@ -255,58 +269,59 @@
 
     <footer class="site-footer">
         <div class="container site-footer__container">
-            <div class="site-contact">
-                <a href="./index.html" class="logo">
-                    <span class="logo--white"><span class="logo__web">Web</span>Studio</span>
-                </a>
-                <address class="site-contact__address" id="address">
-                    <p class="site-contact__street">г. Киев, пр-т Леси Украинки, 26</p>
-                    <ul class="site-contact__list--bottom">
-                        <li class="site-contact__item">
-                            <a href="mailto:info@devstudio.com" class="site-contact__link">info@devstudio.com</a>
+            <div class="concat-container">
+                <div class="site-contact site-contact__footer">
+                    <a href="./index.html" class="logo">
+                        <span class="logo--white"><span class="logo__web">Web</span>Studio</span>
+                    </a>
+                    <address class="site-contact__address" id="address">
+                        <p class="site-contact__street">г. Киев, пр-т Леси Украинки, 26</p>
+                        <ul class="site-contact__list--bottom">
+                            <li class="site-contact__item">
+                                <a href="mailto:info@devstudio.com" class="site-contact__link">info@devstudio.com</a>
+                            </li>
+                            <li class="site-contact__item">
+                                <a href="tel:+380681111111" class="site-contact__link">+38 068 111 11 11</a>
+                            </li>
+                        </ul>
+
+                    </address>
+                </div>
+
+                <div class="subscribe__conainer">
+                    <p class="subscribe__title">ПРИСОЕДИНЯЙТЕСЬ</p>
+                    <ul class="subscribe__list">
+                        <li class="subscribe__item">
+                            <a class="subscribe__link" href="#">
+                                <svg class="subscribe__icon" width="20" height="20">
+                                    <use href="./images/icon-sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="site-contact__item">
-                            <a href="tel:+380681111111" class="site-contact__link">+38 068 111 11 11</a>
+                        <li class="subscribe__item">
+                            <a class="subscribe__link" href="#">
+                                <svg class="subscribe__icon" width="20" height="20">
+                                    <use href="./images/icon-sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="subscribe__item">
+                            <a class="subscribe__link" href="#">
+                                <svg class="subscribe__icon" width="20" height="20">
+                                    <use href="./images/icon-sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="subscribe__item">
+                            <a class="subscribe__link" href="#">
+                                <svg class="subscribe__icon" width="20" height="20">
+                                    <use href="./images/icon-sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-
-                </address>
+                </div>
             </div>
-
-            <div class="subscribe__conainer">
-                <p class="subscribe__title">ПРИСОЕДИНЯЙТЕСЬ</p>
-                <ul class="subscribe__list">
-                    <li class="subscribe__item">
-                        <a class="subscribe__link" href="#">
-                            <svg class="subscribe__icon" width="20" height="20">
-                                <use href="./images/icon-sprite.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="subscribe__item">
-                        <a class="subscribe__link" href="#">
-                            <svg class="subscribe__icon" width="20" height="20">
-                                <use href="./images/icon-sprite.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="subscribe__item">
-                        <a class="subscribe__link" href="#">
-                            <svg class="subscribe__icon" width="20" height="20">
-                                <use href="./images/icon-sprite.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="subscribe__item">
-                        <a class="subscribe__link" href="#">
-                            <svg class="subscribe__icon" width="20" height="20">
-                                <use href="./images/icon-sprite.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
             <div class="subscribe-input__container">
                 <p class="subscribe-input__title">ПОДПИСВЫВАЙТЕСЬ</p>
                 <div class="subscribe-input__elements">
@@ -321,6 +336,54 @@
             </div>
         </div>
     </footer>
+
+    <div class="menu-container js-menu-container">
+        <button class="input-form__button--close btn-close js-close-menu">
+            <svg class="input-form__icon--close" width="40" height="40">
+                <use href="./images/icon-sprite.svg#icon-close_mobile" />
+            </svg>
+        </button>
+
+        <nav class="site-header__nav--mobile">
+            <a href="./index.html" class="logo logo--mobile">
+                <span class="logo--black"><span class="logo__web">Web</span>Studio</span>
+            </a>
+            <ul class="site-menu site-menu--mobile">
+                <li class="site-menu__item site-menu__item--mobile">
+                    <a href="./index.html" class="site-menu__link site-menu__link--mobile">
+                        Студия </a>
+                </li>
+                <li class="site-menu__item site-menu__item--mobile">
+                    <a href="./portfolio.html" class="site-menu__link site-menu__link--mobile site-menu__link--current">
+                        Портфолио </a>
+                </li>
+                <li class="site-menu__item site-menu__item--mobile">
+                    <a href="#address" class="site-menu__link site-menu__link--mobile"> Контакты </a>
+                </li>
+            </ul>
+        </nav>
+
+        <ul class="site-contact site-contact--top">
+            <li class="site-contact__item">
+                <a href="mailto:info@devstudio.com" class="site-contact__link site-contact__link--top">
+                    <svg class="site-contact__icon" width="16" height="12">
+                        <use href="./images/icon-sprite.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com
+                </a>
+            </li>
+            <li class="site-contact__item">
+                <a href="tel:+380681111111" class="site-contact__link site-contact__link--top">
+                    <svg class="site-contact__icon" width="10" height="16">
+                        <use href="./images/icon-sprite.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 068 111 11 11
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
 
 </body>
 
