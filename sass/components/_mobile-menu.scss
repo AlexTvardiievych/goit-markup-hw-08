@@ -10,13 +10,20 @@
   flex-direction: column;
   justify-content: space-between;
 
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+
   background-color: $full-white;
-  transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
+  @include translate(100%, 0%, 1);  
+  @include transition(transform);  
 }
 
-.menu-container.is-open {
-  transform: translateX(0);
+.menu-container.is-open {    
+  @include translate(0%, 0, 1);
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
 }
 
 .site-menu__link--mobile{
