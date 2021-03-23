@@ -41,7 +41,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 60px;
+
+  @media (max-width: 1200px) {    
+    margin-bottom: 60px;    
+  }    
 
   @media (min-width: 768px) {    
     margin-right: 165px;    
@@ -93,12 +96,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 60px;
-  // margin-left: 70px;  
+  
+  @media (max-width:1200px) {
+    margin-bottom: 60px;
+  }
+  
+  @media (min-width:1200px) {
+    align-items: flex-start;
+  }
 }
 
 .subscribe__title{
-  @extend %footer-subscribe-titles;
+  @extend %footer-subscribe-titles;  
 }
 
 .subscribe__list{
@@ -136,12 +145,15 @@
   fill: currentColor;
 }
 
-.subscribe-input__container{
-  // margin-left: 93px;
+.subscribe-input__container{  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (min-width:1200px) {
+    align-items: flex-start;
+  }
 }
 
 .subscribe-input__title{

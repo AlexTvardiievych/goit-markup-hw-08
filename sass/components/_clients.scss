@@ -1,13 +1,13 @@
-.clients__container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.clients__container{  
   padding: 60px 15px; 
   margin: 0 auto; 
+
+  @media (min-width: 1200px) {
+    padding: 94px 0px;
+  }
 }
 
-.clients__title{
-  position: absolute;
+.clients__title{  
   @extend %title-h2;
   margin-bottom: 30px;
 }
@@ -15,7 +15,8 @@
 .clients__list{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;    
+  justify-content: center;  
+  align-items: center;  
   margin-top: calc(-1 * 30px);
   margin-left: calc(-1 * 30px);
 }
@@ -32,18 +33,13 @@
   @media (min-width: 1200px) {
     flex-basis: calc((100% - 180px) / 6);
   }
-
-  // &:not(:last-child){
-  //   margin-right: 30px;
-  // }
 }
   
-
 .clients__link{
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 210px;
+  // max-width: 210px;
   height: 90px;
   border: solid;
   border-width: 1px;
