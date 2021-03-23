@@ -28,12 +28,18 @@
 }
 
 .team__list{    
+  
   display: flex;
   flex-direction: column;  
   justify-content: center;
   align-items: center;
   margin-top: calc(-1 * 30px);
   margin-left: calc(-1 * 30px);
+
+  @media (max-width:767px)
+  {
+    margin: 0px auto;
+  }
 
   @media (min-width: 768px) {    
     flex-wrap: wrap;
